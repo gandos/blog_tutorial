@@ -147,7 +147,9 @@ public class MukadimahJava7 {
 		showNumbers(new ArrayList<Integer>());
 	}
 	
-	public void showNumbers(List<Integer>...nums) {
+	@SafeVarargs
+	// WARNING SUPPRESSED
+	public static void showNumbers(List<Integer>...nums) {
 		for(List<Integer> num : nums) {
 			System.out.println(num);
 		}
