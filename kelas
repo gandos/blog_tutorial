@@ -1,0 +1,23 @@
+private String eventId;
+	private String name;
+	private String message;
+	private String endTime;
+	private String attackerAddress;
+	private String attackerPort;
+	private String targetAddress;
+	private String targetPort;
+	private String annotationStage;
+	private String annotationUser;
+	private String annotationComment;
+	private String deviceProduct;
+	private String managerReceiptTime;
+	private String attackerUserName;
+	private String attackerUserId;
+	private String targetUserName;
+	private String targetUserId;
+	private String deviceCustomString1="";
+	private String deviceCustomString2;
+	private String deviceCustomNumber1="";
+	private String eventType;
+  
+  Name,Message,Event_ID,Device_Address,Device_Vendor,Attacker_Address,Attacker_Port,Target_Address,Target_Port,Event_Annotation_Comment,End_Time,Event_Annotation_Stage_User_Name,Event_Annotation_Stage_Name,Attacker_Host_Name,Event_Annotation_Modification_Time,File_Path
