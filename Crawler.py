@@ -55,7 +55,7 @@ def send_request(url, fname):
 	doc = html.fromstring(rsp.read().decode("utf-8"))
 	
 	print (url, ': HTTP ', rsp.status, '-->', fname)
-	#print(etree.tostring(doc, encoding='unicode', pretty_print=True))
+	
 	with open(fname, "w", encoding="utf-8") as file:
 		file.write(etree.tostring(doc, encoding = 'unicode', pretty_print=True))
 
@@ -117,7 +117,6 @@ def main():
 	
 	t = tuple(('root',url))
 	traverse([t], 1)
-	#request_test("https://www.alphapolis.co.jp/novel/901123427/931067230")
 	
 if __name__ == "__main__":
 	main()
